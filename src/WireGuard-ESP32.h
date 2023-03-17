@@ -14,4 +14,5 @@ public:
     bool begin(const IPAddress& localIP, const char* privateKey, const char* remotePeerAddress, const char* remotePeerPublicKey, uint16_t remotePeerPort);
     void end();
     bool is_initialized() const { return this->_is_initialized; }
+    bool handshake_init() const { return this->_handshake_init; }
 };
